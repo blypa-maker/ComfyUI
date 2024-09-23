@@ -44,6 +44,6 @@ This repo includes files to run the docker container with ComfyUI on the AWS EC2
 
 8. Run app
 
-         docker compose up
+         docker-compose up
 
    
