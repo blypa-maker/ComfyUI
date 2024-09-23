@@ -18,24 +18,31 @@ This repo includes files to run the docker container with ComfyUI on the AWS EC2
 
        sudo amazon-linux-extras install docker
 
-3. Start the docker
+3. Install docker compose tool
+
+        sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+        sudo chmod +x /usr/local/bin/docker-compose
+
+4. Start the docker
+   
 
        sudo service docker start
 
-4. Create a comfyui directory.
+5. Create a comfyui directory.
 
         mkdir comfyui
        
 
-5. Clone this repo
+6. Clone this repo
 
         git clone https://github.com/blypa-maker/ComfyUI comfyui
 
-6. Navigate to directory
+7. Navigate to directory
 
          cd comfyui
 
-7. Run app
+8. Run app
 
          docker compose up
 
